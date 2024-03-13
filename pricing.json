@@ -1,0 +1,72 @@
+{
+  "products": {
+    "product1": {
+      "name": "Product 1",
+      "price": 10,
+      "quantity": 100,
+      "currency": "USD",
+      "description": "Description for Product 1",
+      "onDemandDefault": true
+    },
+    "product2": {
+      "name": "Product 2",
+      "price": 20,
+      "quantity": 200,
+      "currency": "USD",
+      "description": "Description for Product 2",
+      "onDemandDefault": false
+    },
+    "product3": {
+      "name": "Product 3",
+      "price": 30,
+      "quantity": 300,
+      "currency": "USD",
+      "description": "Description for Product 3",
+      "onDemandDefault": false
+    },
+    "test": {
+      "name": "Test Product",
+      "price": 200,
+      "quantity": 0,
+      "currency": "EUR",
+      "description": "",
+      "onDemandDefault": false
+    },
+    "newProductInSection2": {
+      "name": "New Product in Section 2",
+      "price": 25,
+      "quantity": 150,
+      "currency": "USD",
+      "description": "Description for New Product in Section 2",
+      "onDemandDefault": true
+    }
+  },
+  "sections": {
+    "section1": {
+      "name": "Section 1",
+      "productKeys": ["product1"]
+    },
+    "section2": {
+      "name": "Section 2",
+      "productKeys": ["product3", "product2"]
+    }
+  },
+  "packages": {
+    "package1": {
+      "name": "Package 1",
+      "includedProducts": ["product1", "product3"],
+      "totalPrice": 40,
+      "currency": "USD",
+      "discountedPrice": 30
+    },
+    "package2": {
+      "name": "Package 2",
+      "includedProducts": ["product2", "newProductInSection2"],
+      "totalPrice": 20,
+      "currency": "USD",
+      "discountedPrice": 18
+    }
+  },
+  "packagesDisplayOrder": ["package1", "package2"],
+  "sectionsDisplayOrder": ["section1", "section2"]
+}
